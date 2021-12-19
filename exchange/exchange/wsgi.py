@@ -16,4 +16,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'exchange.settings')
 
 application = get_wsgi_application()
 worker= Worker()
-worker.run_continuously(30)
+worker.run_continuously(3600)
